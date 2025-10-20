@@ -46,7 +46,7 @@ A real-time multilingual chatbot powered by Cloudflare Workers AI, featuring voi
 1. **Clone the repository**
    ```bash
    git clone https://github.com/owenw-28/cf_ai_multilingual_chatbot.git
-   cd ai-multilingual_chatbot
+   cd cf_ai_multilingual_chatbot
    ```
 
 2. **Install dependencies**
@@ -131,7 +131,7 @@ A real-time multilingual chatbot powered by Cloudflare Workers AI, featuring voi
 ## 📁 Project Structure
 
 ```
-ai-multilingual_chatbot/
+cf_ai_multilingual_chatbot/
 ├── src/
 │   ├── index.ts              # Main Worker entry point
 │   ├── conversation.ts       # Durable Object for storage
