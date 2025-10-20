@@ -120,7 +120,7 @@ A real-time multilingual chatbot powered by Cloudflare Workers AI, featuring voi
 
 ## 🛠️ Tech Stack
 
-- **Runtime**: Cloudflare Workers
+- **Runtime**: Cloudflare Workers (Typescript)
 - **AI Models**: 
   - Llama 3.1 8B Instruct (chat)
   - Whisper (speech-to-text)
