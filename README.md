@@ -95,13 +95,13 @@ A real-time multilingual chatbot powered by Cloudflare Workers AI, featuring voi
 
 ### Text Chat
 1. Select your desired language from the dropdown
-2. Type your message in the input box
+2. Type your message in the input box (Preferably any language that LLM can understand)
 3. Click "Send" or press Enter
 4. The AI will respond in your selected language
 
 ### Voice Chat
 1. Click "🎤 Start Recording"
-2. Speak your message clearly
+2. Speak your message clearly (Preferably any language that LLM can understand)
 3. Click "⏹️ Stop Recording"
 4. Your speech will be transcribed and the AI will respond
 
