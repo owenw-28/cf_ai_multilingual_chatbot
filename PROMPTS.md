@@ -2,29 +2,10 @@
 
 This document contains all major AI prompts used to develop this project, organized chronologically.
 
-## Project Initialization
-
-### 1. Initial Setup
-**Prompt**: "How do I include AI bindings here: [ai] binding = "AI""
-
-**Context**: Setting up Workers AI binding in wrangler.jsonc
-
-**Result**: Added proper JSON format for AI binding configuration
-
----
-
-### 2. Model Selection
-**Prompt**: "error: 5007: No such model @cf/meta/llama-3-3b-instruct or task"
-
-**Context**: Initial model name was incorrect
-
-**Result**: Changed to valid model `@cf/meta/llama-3.1-8b-instruct`
-
----
 
 ## Feature Development
 
-### 3. Speech-to-Text Integration
+### 1. Speech-to-Text Integration
 **Prompt**: "I want you to now add speech-to-text: Step 4 — Add Speech-to-Text (STT). We need to capture user voice input and convert it to text so that Llama can translate it. Option 1: Use Cloudflare's Whisper model via Workers AI. Whisper can take audio data (Blob/ArrayBuffer) and return text. You'll POST audio from the frontend to your Worker."
 
 **Context**: Adding voice input capability
@@ -33,7 +14,7 @@ This document contains all major AI prompts used to develop this project, organi
 
 ---
 
-### 4. Architecture Change to Chatbot
+### 2. Architecture Change to Chatbot
 **Prompt**: "Now I want to change the idea from it being a translator to a conversation so that you can have conversations in a different language. I want you to include state or memory"
 
 **Context**: Pivoting from simple translation to conversational AI
@@ -45,7 +26,7 @@ This document contains all major AI prompts used to develop this project, organi
 
 ---
 
-### 5. User Experience Improvements
+### 3. User Experience Improvements
 
 #### Text Input Option
 **Prompt**: "Give the user the option to type as well"
@@ -61,7 +42,7 @@ This document contains all major AI prompts used to develop this project, organi
 
 ---
 
-### 6. Text-to-Speech
+### 4. Text-to-Speech
 **Prompt**: "I want to add text-to-speech to the chatbot responses as well"
 
 **Result**: 
@@ -71,7 +52,7 @@ This document contains all major AI prompts used to develop this project, organi
 
 ---
 
-### 7. Conversation Management
+### 5. Conversation Management
 
 #### Reset Functionality
 **Prompt**: "I want you to add an option to reset the chat"
@@ -82,7 +63,7 @@ This document contains all major AI prompts used to develop this project, organi
 
 ## Advanced Features
 
-### 8. Durable Objects Integration
+### 6. Durable Objects Integration
 **Prompt**: "Add durable objects"
 
 **Context**: Need for persistent conversation storage to meet assignment requirements
@@ -96,7 +77,7 @@ This document contains all major AI prompts used to develop this project, organi
 
 ---
 
-### 10. Repository Setup
+### 7. Repository Setup
 **Prompt**: "Can you help me with this: your repository name must be prefixed with cf_ai_, must include a README.md file with project documentation and clear running instructions to try out components (either locally or via deployed link). AI-assisted coding is encouraged, but you must include AI prompts used in PROMPTS.md"
 
 **Result**: 
@@ -139,19 +120,3 @@ This document contains all major AI prompts used to develop this project, organi
 - **Primary**: GitHub Copilot (VS Code extension)
 - **Context**: All prompts were conversational, building on previous context
 - **Approach**: Iterative development with immediate testing and refinement
-
----
-
-## Code Quality Notes
-
-- All TypeScript code follows strict type checking
-- Frontend uses vanilla JavaScript for simplicity
-- No external dependencies for UI (pure HTML/CSS/JS)
-- CORS headers added for potential future frontend separation
-- Error handling implemented throughout
-
----
-
-**Total Development Time**: Approximately 2-3 hours with AI assistance
-**Lines of Code**: ~540 (index.ts + conversation.ts)
-**AI Contribution**: ~80% initial implementation, 20% manual refinement and testing

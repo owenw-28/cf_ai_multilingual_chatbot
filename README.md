@@ -45,7 +45,7 @@ A real-time multilingual chatbot powered by Cloudflare Workers AI, featuring voi
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/owenw-28/cf_ai_multilingual_chatbot.git
    cd ai-voice-translator
    ```
 
